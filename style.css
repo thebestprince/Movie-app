@@ -22,13 +22,14 @@ header {
     background-color: transparent;
     border: 2px solid darkblue;
     border-radius: 50px;
+    color:white;
     font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
 }
 
 .search::placeholder{
-    color: lightblue;
+    color: darkcyan;
     
 }
 
