@@ -92,7 +92,9 @@ main {
 .overview {
     background-color: aliceblue;
     padding: 2rem;
-    position:absolute;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
     bottom: 0;
     left: 0;
     right: 0;
