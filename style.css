@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: green;
+    background-color: royalblue;
     font-family: 'Poppins', sans-serif;
     margin: 0;
 
@@ -48,6 +48,7 @@ main {
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    position: relative;
     margin: 2rem;
     width: 300px;
 }
@@ -86,4 +87,23 @@ main {
 .movie-info span.red
  {  color:(189, 42, 42)
    
+}
+
+.overview {
+    background-color: aliceblue;
+    padding: 2rem;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
 }
