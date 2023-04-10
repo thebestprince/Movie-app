@@ -18,12 +18,24 @@
             <div class="now-playing">Playing x OF y</div>
             <div class="track-art"></div>
             <div class="track-name"> Track Name</div>
-            <div class="Track-artist">
-        </div>   
-        </div>
-        <header>
+            <div class="Track-artist"></div>
+        </div>  
+
+       
+      
             <div class="slider_container">
-            <div class="current-time"></div>
+                <div class="current-time">00:00</div>
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+                </div>
+            
+            
+                <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                    </div>
             </button>
         </header>
 
