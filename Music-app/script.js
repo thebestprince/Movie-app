@@ -75,4 +75,24 @@ function randowm_bg_color(){
         return a;
     }
     let Color1 = populate('#');
+    let Color2 = populate('#');
+    var angle = 'to right';
+
+    let gradient ='linear-gradient(' + angle + ',' + Color1 + ','
++ Color2 +"}";
+document.body.style.background = gradient;
 }
+
+function reset(){
+    curr_time.textContent = "00:00"; 
+    total_duration.textContent ="00:00";
+    seek_slider.value = 0;
+}
+function  randomTrack(){
+    isRandom ? pauseRandom() : playrandom();
+}
+function playRandom(){
+    isRandom = true;
+    randomIcon.classList.add('randomActive');
+}
+functio
