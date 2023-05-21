@@ -95,4 +95,18 @@ function playRandom(){
     isRandom = true;
     randomIcon.classList.add('randomActive');
 }
-functio
+function repeatTrack(){
+    let current_index = track_index;
+    loadTrack(current_index);
+    playTrack();
+}
+function playpauseTrack(){
+    isPlaying ? playpauseTrack() : playTrack();
+}
+function playTrack(){
+    curr_track.play();
+    isPlaying = true:
+    track_art.classList.add('rotate');
+    wave.classList.add('loader');
+    playhouse_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+}
