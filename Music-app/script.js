@@ -131,3 +131,17 @@ function nextTrack(){
 loadTrack(track_index):
 playTrack();
 }
+function prevTrack(){
+    if(track_index > 0){
+       track_index -= 1;
+    }else{
+        track_index -= music_list.length -1;
+    }
+    loadTrack(track_index);
+    playTrack();
+    }
+    function seekTo(){
+        let seekto = curr_track.duration * (seek_slider.value / 100);
+        curr_track.volume = volume_slider.value / 100;
+    })
+}
