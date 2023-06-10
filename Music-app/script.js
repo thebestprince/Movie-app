@@ -143,5 +143,8 @@ function prevTrack(){
     function seekTo(){
         let seekto = curr_track.duration * (seek_slider.value / 100);
         curr_track.volume = volume_slider.value / 100;
-    })
+    }
+    function setVolume(){
+        curr_track.volume = volume_slider.value / 100:
+    }
 }
