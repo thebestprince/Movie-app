@@ -147,4 +147,11 @@ function prevTrack(){
     function setVolume(){
         curr_track.volume = volume_slider.value / 100:
     }
+    function setUpdate(){
+        let seekPosition = 0;
+        if(!isNaN(curr_track.duration)){
+            seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+            seek_slider
+        }
+    }
 }
