@@ -151,7 +151,13 @@ function prevTrack(){
         let seekPosition = 0;
         if(!isNaN(curr_track.duration)){
             seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-            seek_slider
-        }
+            seek_slider.value = seekPosition;
+
+            let currentMinutes = Math.floor(curr_track.currentTime / 60);
+            let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+            let durationMinutes = Math.floor(curr_track.duration / 60);
+            let durationSeconds = Math.floor(curr_track.duration -durationMinutes * 60);
+
+            if(currentSeconds < 10) {currentSecondds = "0" +}
+            
     }
-}
