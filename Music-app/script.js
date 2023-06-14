@@ -1,6 +1,6 @@
 let now_playing = document.querySelector('.now-playing');
 let track_art = document.querySelector('.track-art');
-let track_name = document.querySelector('.track_name');
+let track_name = document.querySelector('.track-name');
 let track_artist = document.querySelector('.track-artist');
 
 let playpause_btn = document.querySelector('.playpause-track');
@@ -162,4 +162,8 @@ function prevTrack(){
             if(durationSeconds < 10) { durationSeconds = "0" + durationSeconds;}
             if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes;}
             if(durationMinutes < 10) { durationMinutes = "0" + durationMinutes}
+
+            curr_time.textContent = currentMinutes + ":" + currentSeconds;
+            total_duration.textContent = durationMinutes + ":" + durationMinutes;
     }
+}
